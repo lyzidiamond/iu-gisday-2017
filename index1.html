@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>Big</title>
+  <link href='big.css' rel='stylesheet' type='text/css' />
+  <link href='highlight.css' rel='stylesheet' type='text/css' />
+  <style>
+    .new-shiny { background: #aaaaaa; }
+  </style>
+  <script src='big.js'></script>
+  <script src='highlight.js'></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class='light'>
+  <div>
+    <span style='color:#1668B2;'>A whole lot of small problems: the landscape of modern geospatial technology</span>
+    <br /><br />
+    <center><img src='http://bestanimations.com/Military/Explosions/earth-explosion-animated-gif.gif' /></center>
+    <small class='nobreak'>Lyzi Diamond | GIS Day 2017 | Indiana University</small>
+  </div>
+  <div>
+    My name is Lyzi Diamond! I work on the Directions API at Mapbox.
+  </div>
+  <div>
+    [confused wolf gif] <notes>that's ok, we will totally get to that</notes>
+  </div>
+  <div>
+    Real talk: technology is intimidating.
+  </div>
+  <div>
+    [you can do it you're a champion computers are dumb etc]
+  </div>
+  <div>
+    My theory: it is helpful to know a. vocabulary and b. the problem space. Knowing the vocabulary will help you search for things and recognize them in the future. Knowing the problem space will help you connect the dots quicker and problem solve for yourself.
+  </div>
+  <div>
+    Therefore, this talk is: a. the challenges of making maps for web and mobile, and b. how we solve those challenges. The plan is to introduce the problem space, then talk about the tools we're building. Problem space and vocabulary.
+  </div>
+  <div>
+    A. Web and Mobile Maps
+  </div>
+  <div>
+    When we talk about making a map, what does that entail? You need three things:
+    <ol>
+      <li>
+        data
+      </li>
+      <li>
+        styling rules
+      </li>
+      <li>
+        rendering
+      </li>
+    </ol>
+  </div>
+  <div>
+    Example #1: Eretosthenes' Map of the World
+  </div>
+  <div>
+    Example #2: USGS Earthquake Map
+  </div>
+  <div>
+    Data -- one of the hardest parts, most confusing, includes map projections
+  </div>
+  <div>
+    who owns the data? what is missing? who collected it?
+  </div>
+  <div>
+    example
+  </div>
+  <div>
+    Styling -- based on psychology, human experience
+  </div>
+  <div>
+    example -- buster bluth?
+  </div>
+  <div>
+    Rendering -- the obvious technological challenge when considering scale and expectations
+  </div>
+  <div>
+    back to eratosthenes/nadia example?
+  </div>
+  <div>
+    Each of these aspects can be tweaked to create a map that does what you want it to do.
+  </div>
+  <div>
+    What does that mean? It provides the service you want it to provide, whether that's general location context, some specific dataset or opinion about a dataset, or some other service the map is providing (like directions).
+  </div>
+  <div>
+    Example
+  </div>
+  <div>
+    So how might we tweak these factors considering we want to optimize maps for web and mobile?
+  </div>
+  <div>
+    performance
+  </div>
+  <div>
+    scalability
+  </div>
+  <div>
+    user-centered design
+  </div>
+  <div>
+    expected services and integrations
+  </div>
+  <div>
+    localization
+  </div>
+  <div>
+    We can't have our dude Eratosthenes here drawing a map for each person who loads weather.com by hand with word-of-mouth data.
+  </div>
+  <div>
+    We need to create a tool to send maps and tools and services to lots of browsers and cell phones whenever they want them. This seems like a task for the internet!
+  </div>
+  <div>
+    B. What we use to make web and mobile maps
+  </div>
+  <div>
+    HOW THE INTERNET WORKS
+  </div>
+  <div>
+    APIs! Request info, send info. scalable
+  </div>
+  <div>
+    data: vector tiles via API. styling: stylesheet via API, built with Mapbox Studio. rendering: OpenGL/WebGL.
+  </div>
+  <div>
+    This is really really cool because it enables visualizations we couldn't think to do before.
+  </div>
+  <div>
+    also: directions, geocoding, other services we can provide
+  </div>
+  <div>
+    C. How this relates to GIS work of the recent/now
+  </div>
+  <div>
+    What problems are we trying to solve? Are we asking ourselves the right questions? Can we be serving people better?
+  </div>
+  <div>
+    D. How to get good at this
+  </div>
+  <div>
+    Don't just "learn how to code" -- learn how to think
+  </div>
+  <div>
+    Learn how to Google/ask questions and find answers
+  </div>
+  <div>
+    Slack, Twitter, BLOG BLOG BLOG
+  </div>
+  <div>
+    E. Conclusion / why this is important
+  </div>
+  <div>
+    This is important because the way we use maps is changing and growing super fast, and we need you there to keep building things to make the world better.
+  </div>
+  <div>
+    Plus you can make $$
+  </div>
+  <div>
+    list of resources
+  </div>
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47757349-1', 'lyzidiamond.com');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
